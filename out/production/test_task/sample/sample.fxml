@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="myGridPane" alignment="center" hgap="10" style="-fx-background-image: url('sheep.jpg');" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" prefWidth="200.0" />
+   </columnConstraints>
+   <children>
+      <Label fx:id="myLabel" text="Не могу заснуть..." textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <font>
+            <Font name="JetBrains Mono Regular" size="18.0" />
+         </font></Label>
+      <Button fx:id="myButton" mnemonicParsing="false" onAction="#onClick" text="Считать овечек!" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <font>
+            <Font name="JetBrains Mono Regular" size="18.0" />
+         </font></Button>
+   </children>
+</GridPane>
